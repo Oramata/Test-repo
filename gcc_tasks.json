@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build simple_shell",
+        "type": "shell",
+        "command": "gcc",
+        "args": [
+          "-Wall",
+          "-Werror",
+          "-Wextra",
+          "-pedantic",
+          "-std=gnu89",
+          "main.c",
+          "execute.c",
+          "parse.c",
+          "utility.c",
+          "-o",
+          "simple_shell"
+        ],
+        "options": {
+          "env": {
+            "compiler": "gcc",
+            "os": "Ubuntu 20.04 LTS"
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+  
